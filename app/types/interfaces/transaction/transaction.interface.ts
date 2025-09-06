@@ -22,7 +22,13 @@ export enum TransactionCategory {
     EURO = "Euro",
     LIRA = "Lira",
     POUND = "Pound",
+    GOLD14 = 'Gold14',
     GOLD22 = "Gold22",
     GOLD24 = "Gold24",
-    GOLD14 = 'Gold14'
+    KULPLUCEYREK = "KulpluCeyrek",
+    KULPSUZCEYREK = "KulpsuzCeyrek",
+    KULPLUYARIM = "KulpluYarim",
+    KULPSUZYARIM = "KulpsuzYarim",
+    KULPLUTAM = "KulpluTam",
+    KULPSUZTAM = "KulpsuzTam"
 }

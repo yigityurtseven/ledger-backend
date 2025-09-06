@@ -43,7 +43,7 @@ export const login = async (req: Request, res: Response) => {
         }
 
         // Generate a session token
-        const sessionToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET!, { expiresIn: '1h' });
+        const sessionToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET!, { expiresIn: '720h' });
 
         // Save the sessionToken to the user in the database
         user.sessionToken = sessionToken;
