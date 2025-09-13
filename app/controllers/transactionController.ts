@@ -143,7 +143,7 @@ export const getTotals = async (req: Request, res: Response) => {
         const totals = await Transaction.aggregate([
             {
                 $match: {
-                    isCompleted: { $ne: true } // Only include transactions that are not completed
+                    isCompleted: false // Only include transactions that are not completed
                 }
             },
             {
@@ -183,7 +183,7 @@ export const getCustomerTotals = async (req: Request, res: Response) => {
             {
                 $match: {
                     customerId: new ObjectId(id),
-                    isCompleted: { $ne: true } // Only include transactions that are not completed
+                    isCompleted: false // Only include transactions that are not completed
                 },
             },
             {
